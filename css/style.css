@@ -2,12 +2,12 @@ html{
     scroll-behavior: smooth;
 }
 
-body {
+/* body {
 	background: linear-gradient(-45deg, #ffcd70, #ff99c0, #8bf7ee, #96ffe7);
 	background-size: 400% 400%;
 	-webkit-animation: gradient 15s ease infinite;
 	        animation: gradient 15s ease infinite;
-}
+} */
 
 @-webkit-keyframes gradient {
 	0% {

@@ -83,11 +83,19 @@
   /* Navbar Styling Starts */
 
   nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     padding: 1rem 0rem;
+    background: #ffffff;
+    border-radius: 0px 0px 200px 200px;
+    border-bottom: 10px solid orange;
+    border-left: 10px solid orangered;
+    border-right: 10px solid orangered;
   }
 
   #navbar_logo_wrapper {
@@ -100,7 +108,7 @@
   #navbar_logo_wrapper h1 {
     font-size: 3rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #000000;
   }
 
   #navbar_logo {
@@ -121,15 +129,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
   }
 
   #navbar_content_wrapper ul li {
     list-style: none;
+    padding: 4px;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
     color: #000000;
     cursor: pointer;
+    transition: all 0.65s;
+  }
+
+  #navbar_content_wrapper ul li:hover{
+    border-radius: 10px 0px 10px 0px;
+    cursor: pointer;
+    background: #ea6e28;
+    color: #ffffff;
   }
 
   #navbar_login_wrapper {
@@ -141,10 +158,10 @@
 
   #navbar_login_wrapper button {
     padding: 8px 10px;
-    color: #ea6e28;
-    background: #ffffff;
-    font-size: 1rem;
-    font-weight: 700;
+    color: #ffffff;
+    background: #ea6e28;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
   #navbar_login_wrapper button:hover {
@@ -465,4 +482,306 @@ background-size: 100% 60px;
     justify-content: center;
     width: 20px;
     height: 20px;
+  }
+
+  .fourth_section_wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+      /* background: url("/images/ThirdImage.jpg"); */
+      padding: 6rem 3rem;
+  }
+
+  .fourth_section_wrapper h1{
+    font-family: 'Mynerve', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .fourth_section_wrapper p{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .fourth_div_card_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .testimonial_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 30px 10px 30px 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    gap: 10px;
+  }
+
+  .testimonial_card p{
+    font-size: 0.95rem;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .testimonial_card_first{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .testimonial_card_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .testimonial_card_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial_card_heading p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic; 
+  }
+
+  .fivth_section_wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    background: #ffffff;
+    padding: 6rem 0rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+
+  .fivth_div_left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 530px;
+    gap: 20px;
+  }
+
+  .fivth_div_left_first{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 15px;
+  }
+
+  #input_subscribe_email{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 250px;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  #subscribe_email_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 20px 30px;
+    background-color: #ea6e28;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0;
+  }
+
+  #subscribe_email_button:hover{
+    color: #000000;
+    border-radius: 0px 10px 0px 10px;
+  }
+
+  .fivth_div_right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .fivth_div_image_wrapper{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .fivth_div_left h1{
+    font-family: 'Mynerve', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #FFFFFF;
+    border-radius: 200px 200px 0px 0px;
+    border-top: 10px solid orange;
+    border-left: 10px solid orangered;
+    border-right: 10px solid orangered;
+  }
+
+  footer h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  footer p{
+    line-height: 30px;
+  }
+
+  #footer_first_div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 180px;
+  }
+
+  #footer_logo_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;  
+  }
+
+  #footer_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 80px;
+    height: 60px;
+  }
+
+  #footer_logo_wrapper h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  #footer_social_media_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0px;
+  }
+
+  .social_media_icons{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .fa-brands{
+    cursor: pointer;
+  }
+
+  .fa-twitter:before{
+    color: #00acee;
+  }
+
+  .fa-instagram:before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  .fa-linkedin:before{
+    color: #0e76a8;
+  }
+
+  #footer_second_div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    gap: 15px;
+    max-width: 230px;
+  }
+
+  #footer_third_div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    gap: 15px;
+    max-width: 250px;
+  }
+
+  .footer_timings{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .swiper {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 300px; */
+    padding: 300px;
+  }
+
+  .swiper-slide{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .swiper-button-next:after{
+    color: #ea6e28 !important;
+  }
+
+  .swiper-button-prev:after{
+    color: #ea6e28 !important;
   }

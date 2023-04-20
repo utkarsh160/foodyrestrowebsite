@@ -25,7 +25,7 @@
       <div id="navbar_logo_wrapper">
         <div id="navbar_logo">
           <img
-            src="./images/PikPng.com_food-icon-png_369777.png"
+            src="./images/logo utkarsh sir.png"
             alt="Foody Logo"
           />
         </div>
@@ -36,10 +36,9 @@
       <div id="navbar_content_wrapper">
         <ul>
           <li>Menu</li>
-          <li>Events</li>
           <li>Gallery</li>
           <li>About</li>
-          <li>Contact</li>
+          <li id="contact">Contact</li>
         </ul>
       </div>
       <div id="navbar_login_wrapper">
@@ -490,8 +489,8 @@
             </span>
           </div>
         </div>
-      </section>
-      <footer>
+    </section>
+    <footer>
         <div id="footer_first_div">
             <div id="footer_logo_wrapper">
                 <div id="footer_logo">
@@ -523,7 +522,7 @@
                 <p><strong>SUN:</strong> 11:00 AM - 8:00 PM</p>
              </div>
         </div>
-      </footer>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
@@ -533,6 +532,11 @@
 
     <script>
       console.log("HELLO");
+      let element = document.querySelector(".first_common_section");
+ let contactNav = document.querySelector("#contact")
+ contactNav.onclick = function(){
+  element.scrollIntoView({behavior: "smooth"});
+ }
 
       const swiper = new Swiper(".swiper", {
         // Optional parameters

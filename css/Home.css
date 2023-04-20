@@ -21,7 +21,6 @@
    
   body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.188);
-
   }
    
   body::-webkit-scrollbar-thumb {
@@ -161,7 +160,7 @@
     color: #ffffff;
     background: #ea6e28;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   #navbar_login_wrapper button:hover {
